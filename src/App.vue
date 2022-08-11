@@ -72,7 +72,10 @@ export default {
       </div>
     </div>
     <div class="text-9xl font-mono p-20">
-      = <span class="font-sans font-bold">{{ numberZ }}</span>
+      =
+      <span class="font-sans font-bold" :class="{ 'text-green-500': numberZ > 0, 'text-red-500': numberZ < 0 }">{{
+        numberZ
+      }}</span>
     </div>
   </div>
 </template>
