@@ -76,6 +76,9 @@ export default {
       <span class="font-sans font-bold" :class="{ 'text-green-500': numberZ > 0, 'text-red-500': numberZ < 0 }">{{
         numberZ
       }}</span>
+      <div class="text-slate-300" v-if="numberZ < 0">&lt; 0</div>
+      <div class="text-slate-300" v-else-if="numberZ > 0">&gt; 0</div>
+      <div class="text-slate-300" v-else>= 0</div>
     </div>
   </div>
 </template>
