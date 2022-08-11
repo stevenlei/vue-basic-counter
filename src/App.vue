@@ -31,6 +31,7 @@ export default {
     <div class="bg-white flex-1 max-w-md rounded-xl shadow-xl overflow-hidden">
       <input
         class="text-9xl font-semibold text-center text-gray-800 py-12 w-full outline-none"
+        :class="{ 'bg-green-400': numberX > 0, 'bg-red-400': numberX < 0 }"
         v-model.number="numberX"
       />
       <div class="flex">
@@ -52,6 +53,7 @@ export default {
     <div class="bg-white flex-1 max-w-md rounded-xl shadow-xl overflow-hidden">
       <input
         class="text-9xl font-semibold text-center text-gray-800 py-12 w-full outline-none"
+        :class="{ 'bg-green-400': numberY > 0, 'bg-red-400': numberY < 0 }"
         v-model.number="numberY"
       />
       <div class="flex">
