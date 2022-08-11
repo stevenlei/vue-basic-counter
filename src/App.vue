@@ -13,7 +13,14 @@ export default {
   },
   watch: {
     numberX(newValue) {
-      this.numberY = newValue;
+      if (newValue > 10) {
+        this.numberX = 10;
+      }
+    },
+    numberY(newValue) {
+      if (newValue > 20) {
+        this.numberY = 20;
+      }
     },
   },
 };
