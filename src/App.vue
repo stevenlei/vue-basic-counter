@@ -14,7 +14,7 @@ export default {
       <h1 class="text-9xl font-semibold text-center text-gray-800 py-12">{{ count }}</h1>
       <div class="flex">
         <button class="bg-blue-600 py-4 font-mono text-center flex-1 text-5xl text-white hover:bg-blue-700" @click="count--">-</button>
-        <button class="bg-blue-500 py-4 font-mono text-center flex-1 text-5xl text-white hover:bg-blue-700" @click="count++" @click.shift="count+=9">+</button>
+        <button class="bg-blue-500 py-4 font-mono text-center flex-1 text-5xl text-white hover:bg-blue-700" @click.exact="count++" @click.shift="count += 10">+</button>
       </div>
     </div>
   </div>
