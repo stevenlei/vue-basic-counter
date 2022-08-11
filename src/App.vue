@@ -11,6 +11,11 @@ export default {
       return this.numberX + this.numberY;
     },
   },
+  watch: {
+    numberX(newValue) {
+      this.numberY = newValue;
+    },
+  },
 };
 </script>
 
